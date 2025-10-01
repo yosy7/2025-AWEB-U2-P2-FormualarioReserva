@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReservaHabitacion</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend style="text-align: center;"><h1>RESERVA DE HABITACIONES</h1></legend>
+
+    <table>
+
+      <tbody>
+        <tr>
+        <th colspan="12" id="tipoDato"><h3>DATOS PERSONALES</h3></th>
+        </tr>
+        <tr>
+        <td  colspan="3"><p></p><label for="nombre">Nombre:</label><br>
+            <input type="text" name="nombre" id="nombre" style="width:97%;"></p>
+        </td>
+         <td  colspan="3"><p></p><label for="apellido_paterno">Apellido Paterno:</label><br>
+            <input type="text" name="apellido_paterno" id="apellido_paterno" style="width:97%;"></p>
+        </td>
+         <td  colspan="3"><p></p><label for="apellido_materno">Apellido Materno:</label><br>
+            <input type="text" name="apellido_materno" id="apellido_materno" style="width:97%;"></p>
+        </td>
+         <td  colspan="3"><p><label for="selectIdioma">Idioma:</label><br>
+
+                <select name="selectIdioma" id="selectIdioma" style="width:97%;">
+                    <option value="" selected>-- Seleccione...</option>
+                    <option value="mx">Español latino</option>
+                    <option value="us">Inglés (Estados Unidos)</option>
+                    <option value="ca">Inglés (Canadá)</option>
+                    <option value="fr">Francés</option>
+                    <option value="it">Español(españa)</option>
+
+                </select>
+                </p>
+            
+        </td>
+        </tr>
+
+        <tr>
+        <th id="tipoDato" colspan="12"> <h3>DIRECCIÓN</h3>
+
+        </th>
+        </tr>
+        <tr>
+             <td  colspan="3"><p><label for="colonia">Colonia:</label><br>
+            <input type="text" name="colonia" id="colonia"></p>
+        </td>
+
+        <td  colspan="3"><p><label for="calle">Calle:</label><br>
+            <input type="text" name="calle" id="calle"></p>
+        </td>
+
+
+             <td  colspan="2"><p><label for="numero">Numero:</label><br>
+            <input type="text" name="numero" id="numero"></p>
+        </td>
+        <td  colspan="2"><p><label for="cp">C.P:</label><br>
+            <input type="text" name="cp" id="cp"></p>
+        </td>
+        <td  colspan="2">
+            <p><label for="selectEstado">Estado:</label><br>
+                <select name="selectEstado" id="selectEstado">
+                    <option value="" selected>-- Seleccione...</option>
+                    <option value="cdmx">Ciudad de México</option>
+                    <option value="gro">Guerrero</option>
+                    <option value="mex">Estado de México</option>
+                    <option value="mor">Morelos</option>
+                    <option value="pue">Puebla</option>
+
+                </select></p>
+        </td>
+        </tr>
+        <tr>
+            <th id="tipoDato" colspan="12"> <h3>DATOS DE LA RESERVA</h3></th>
+        </tr>
+        <tr >
+            <td  colspan="3">
+            <p>
+                <label for="fechaEntrada" >Fecha de entrada:</label><br>
+                <input type="date" name="fechaEntrada" id="fechaEntrada">
+            </p>
+            </td>
+            <td  colspan="3">
+            <p>
+                <label for="fechaSalida" >Fecha de salida:</label><br>
+                <input type="date" name="fechaSalida" id="fechaSalida">
+            </p>
+            </td>
+
+            <td  colspan="3">
+                <p><label for="tipoHabitacion">Tipo de habitación:</label><br>
+                <select name="tipoHabitacion" id="tipoHabitacion">
+                    <option value="" selected>-- Seleccione...</option>
+                    <option value="Simple">simple</option>
+                    <option value="duplex">Duplex</option>
+                    <option value="premium">premium</option>
+                </select></p>
+            </td>
+             <td  colspan="3">
+                <p><label for="tipoCama">Tipo de cama:</label><br>
+                <select name="tipoCama" id="tipoCama">
+                    <option value="" selected>-- Seleccione...</option>
+                    <option value="matrimonial">Matrimonial</option>
+                    <option value="king">King</option>
+                    <option value="queen">Queen</option>
+                </select></p>
+            </td>
+           
+        
+        
+        
+        </tr>
+
+        <tr>
+            <td  colspan="4">
+            <p><label for="numeroPersonas" >Numero de personas:</label><br>
+            <input type="number" name="numeroPersonas" id="numeroPersonas" min="1" max="10"></p>
+        </td>
+
+        <td  colspan="4">
+            <p><label for="RFC" >RFC:</label><br>
+            <input type="text" name="RFC" id="RFC"></p>
+        </td>
+
+         <td  colspan="4">
+            <p><label for="telContacto">Teléfono de contacto:</label><br>
+            <input type="text" name="telContacto" id="telContacto"></p>
+        </td>
+
+    </tr>
+
+
+
+
+
+
+      </tbody>
+    </table>
+    </fieldset>
+    </form>
+</body>
+</html>
